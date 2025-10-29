@@ -1,7 +1,7 @@
 import Navbarr from "@/components/Navbarr";
 import { getResourceBySlug } from "@/lib/contentful";
 import Backbtn from "@/components/Backbtn";
-
+import Image from "next/image";
 
 export default async function ResourcePage({ params }) {
   const { slug } = await params; // ✅ wait for params
@@ -22,11 +22,15 @@ export default async function ResourcePage({ params }) {
           <div className="md:w-full  aspect-square rounded-2xl border-4 bg-[radial-gradient(ellipse_at_49%_57%,#2247136e_9%,#00000057)] border-zinc-600 flex items-center justify-center ">
             <div className="w-3/4 aspect-square">
               {icon && icon.fields?.file?.url && (
-                <img
-                  src={`https:${icon.fields.file.url}`}
-                  alt={title}
-                  className="object-cover w-full h-full rounded-2xl"
-                />
+            <Image
+  src={`https:${icon.fields.file.url}`}
+  alt={title}
+  width={500}
+  height={500}
+  className="object-cover w-full h-full rounded-2xl"
+/>
+
+                                                
               )}
             </div>
           </div>
