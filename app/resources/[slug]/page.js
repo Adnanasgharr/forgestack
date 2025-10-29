@@ -16,7 +16,7 @@ export default async function ResourcePage({ params }) {
   return (
     <main className="w-full h-full ">
       <Navbarr />
-      <Backbtn />
+      < Backbtn />
       <div className="grid w-full h-full md:grid-cols-2 p-4">
         <div className="md:p-7">
           <div className="md:w-full  aspect-square rounded-2xl border-4 bg-[radial-gradient(ellipse_at_49%_57%,#2247136e_9%,#00000057)] border-zinc-600 flex items-center justify-center ">

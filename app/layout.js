@@ -3,7 +3,7 @@ import "./globals.css";
 import "remixicon/fonts/remixicon.css";
 import Footer from "@/components/Footer";
 import { ModalProvider } from "@/context/ModalContext";
-
+import Script from "next/script";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -23,6 +23,21 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" >
+        <head>
+        {/* ✅ Google Analytics Script */}
+        <Script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-4FWM57EXT3"
+        />
+        <Script id="google-analytics">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-4FWM57EXT3');
+          `}
+        </Script>
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased `}
       >
