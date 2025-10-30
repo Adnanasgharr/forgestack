@@ -60,12 +60,24 @@ export default function ResourceTabs({ resources }) {
     <section className="relative w-full md:px-10 p-4 bg-black" ref={listRef}>
       {/* Tabs */}
       <div className="sticky top-5 md:p-4 z-50 md:w-[80%] w-full mx-auto bg-black/90 backdrop-blur-md flex justify-center items-center mb-8 rounded-2xl shadow">
-        <div className="flex items-center gap-2 overflow-x-auto md:gap-3">
+        <div
+          className="flex items-center gap-2 md:gap-3 overflow-x-auto whitespace-nowrap"
+          style={{
+            scrollbarWidth: "none", // Firefox
+            msOverflowStyle: "none", // IE and Edge
+          }}
+        >
+          <style jsx>{`
+            div::-webkit-scrollbar {
+              display: none;
+            }
+          `}</style>
+
           {categories.map((category) => (
             <button
               key={category}
               onClick={() => handleCategoryChange(category)}
-              className={`px-4 py-2 rounded-xl text-sm font-medium transition-colors duration-300 ${
+              className={`px-4 py-2  rounded-xl text-sm font-medium transition-colors duration-300 ${
                 activeCategory === category
                   ? "bg-gradient-to-r from-blue-600 to-cyan-500 text-white"
                   : "text-gray-300 bg-[#0D0D0D] hover:bg-[#2A2A2A] hover:text-white"
