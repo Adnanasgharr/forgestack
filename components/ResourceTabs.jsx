@@ -59,7 +59,7 @@ export default function ResourceTabs({ resources }) {
   return (
     <section className="relative w-full md:px-10 p-4 bg-black" ref={listRef}>
       {/* Tabs */}
-      <div className="sticky top-5 md:p-4 z-50 md:w-[80%] w-full mx-auto bg-black/90 backdrop-blur-md flex justify-center items-center mb-8 rounded-2xl shadow">
+      <div className="sticky top-5 md:p-4 p-2 z-50 md:w-[80%] w-full mx-auto bg-black/90 backdrop-blur-md flex justify-center items-center mb-8 rounded-2xl shadow">
         <div
           className="flex items-center gap-2 md:gap-3 overflow-x-auto whitespace-nowrap"
           style={{
@@ -132,7 +132,7 @@ export default function ResourceTabs({ resources }) {
 
       {/* Pagination Controls */}
       {totalPages > 1 && (
-        <div className="flex justify-center items-center gap-4 mt-10">
+        <div className="flex justify-center items-center gap-4 mt-10 mb-10">
           <button
             onClick={() => handlePageChange(currentPage - 1)}
             disabled={currentPage === 1}
