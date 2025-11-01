@@ -16,15 +16,15 @@ const Footer = () => {
       </div>
 
       {/* Main Footer */}
-      <footer className="px-4 py-4 md:py-0 md:px-10 border-t border-neutral-800 bg-black text-gray-400 pb-10">
-       <h1 className="text-[#30312F] font-bold tracking-tighter leading-none text-[20vw] sm:text-[20vw] md:text-[20vw]  text-center ">
-  forgestack
-</h1>
+      <footer className="px-4 py-4 sm:py-4 md:pb-10 md:px-10 border-t border-neutral-800 bg-black text-gray-400 pb-10">
+        <h1 className="text-[#30312F] font-bold tracking-tighter leading-none text-[20vw] sm:text-[20vw] md:text-[20vw]  text-center ">
+          forgestack
+        </h1>
 
-        <div className="md:grid md:grid-cols-2 items-center justify-between py-8 mb-4 gap-6">
-          <div></div>
+        <div className="sm:grid sm:grid-cols-[1fr_1.5fr] items-center justify-between gap-6 py-4 mb-8 sm:m-0 sm:p-0">
+          <div className="bg-amber-300"></div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3    justify-center gap-3 text-sm text-[#CCCCCC] ">
+          <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-3    justify-center gap-3 text-sm text-[#CCCCCC] ">
             <a href="/about" className="hover:text-white transition-colors">
               About
             </a>
@@ -34,7 +34,7 @@ const Footer = () => {
             >
               Add Resources
             </button>
-            <a href="#" className="hover:text-white transition-colors">
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLScq4Rf9C2tKAdU8aKTJ4_RhP6IcIWMm0_7eFlNPUUK8WYgWYA/viewform" className="hover:text-white transition-colors">
               Submit Feedback
             </a>
             <a href="#" className="hover:text-white transition-colors">

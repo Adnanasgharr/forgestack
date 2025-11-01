@@ -25,7 +25,7 @@ bg-no-repeat
       <Navbarr />
 
       <div className=" w-full flex items-center justify-center h-full">
-        <div className="flex items-center justify-between flex-col w-full px-6 md:my-20">
+        <div className="flex items-center justify-between flex-col w-full px-6 mb-20 md:my-20">
           <h1 className="sm:text-5xl md:text-5xl lg:text-6xl max-w-[25ch] text-4xl text-center  flex items-center">
             <span>
               Handpicked and curated{" "}
