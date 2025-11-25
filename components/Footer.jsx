@@ -11,7 +11,15 @@ const Footer = () => {
       <div className="fixed md:bottom-10 md:left-42 left-28 bottom-8 -translate-x-1/2 z-50">
         <div className="md:text-sm text-[10px] text-neutral-400 border border-neutral-700 bg-black/80 backdrop-blur-md rounded-full px-5 py-2 shadow-lg w-full">
           Made & curated by{" "}
-          <span className="text-white font-medium">Adnan Asghar</span>
+          {/* <span className="text-white font-medium">Adnan Asghar</span> */}
+          <a
+            href="https://adnanasghar.vercel.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-white font-medium"
+          >
+            Adnan Asghar
+          </a>
         </div>
       </div>
 
@@ -34,7 +42,10 @@ const Footer = () => {
             >
               Add Resources
             </button>
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLScq4Rf9C2tKAdU8aKTJ4_RhP6IcIWMm0_7eFlNPUUK8WYgWYA/viewform" className="hover:text-white transition-colors">
+            <a
+              href="https://docs.google.com/forms/d/e/1FAIpQLScq4Rf9C2tKAdU8aKTJ4_RhP6IcIWMm0_7eFlNPUUK8WYgWYA/viewform"
+              className="hover:text-white transition-colors"
+            >
               Submit Feedback
             </a>
             <a href="#" className="hover:text-white transition-colors">
